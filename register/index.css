@@ -1,0 +1,131 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.background {
+  width: 1920px;
+  height: 1080px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.outerbox {
+  width: 670px;
+  height: 960px;
+  border: 1px solid #aacdff;
+  box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 72px 100px 70px 100px;
+}
+.wrapper {
+  width: 470px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  width: 466px;
+  height: 94px;
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0068ff;
+}
+.inputBox0 {
+  width: 466px;
+  height: 80px;
+  font-family: Noto Sans CJK KR;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #797979;
+  border-bottom: 1px solid #0068ff;
+}
+.inputBox {
+  width: 466px;
+  height: 80px;
+  font-family: Noto Sans CJK KR;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #797979;
+  border-bottom: 1px solid #cfcfcf;
+}
+h2 {
+  width: 158px;
+  height: 23.65px;
+}
+.genderChoice {
+  width: 140px;
+  height: 23.94px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+input[type="radio"] {
+  width: 20px;
+  height: 19.95px;
+  background-color: #ebebeb;
+  border: 1px solid #d2d2d2;
+  box-sizing: border-box;
+}
+.agree {
+  width: 454px;
+  height: 21.06px;
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.line {
+  border-bottom: 1px solid #e6e6e6;
+  width: 470px;
+  margin: 30px;
+}
+.submit button {
+  width: 470px;
+  height: 75px;
+  background: #ffffff;
+  border: 1px solid #0068ff;
+  box-sizing: content-box;
+  border-radius: 10px;
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #0068ff;
+}

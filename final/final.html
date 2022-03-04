@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterFINAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./final.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="outerbox">
+            <div class="wrapper">
+                <div class="header">코드캠프 회원가입</div>
+                <div class="input">
+                    <input type="text" name="mail" id="mail" placeholder="이메일을 입력해 주세요." onchange="checkValidation()">
+                </div>
+                <div class="input">
+                    <input type="text" name="name" id="name" placeholder="이름을 입력해 주세요." onchange="checkValidation()">
+                </div>
+                <div class="input">
+                    <input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해 주세요."
+                        onchange="checkValidation()">
+                </div>
+                <div class="input">
+                    <input type="password" name="pwdConfirm" id="pwdConfirm" placeholder="비밀번호를 다시 입력해 주세요."
+                        onchange="checkValidation()">
+                </div>
+                <div class="phone">
+                    <div class="phone__input">
+                        <input type="tel" id="num1" maxlength="3" oninput="changeFocus1()">
+                    </div>
+                    <div class="phone__input">
+                        <input type="tel" id="num2" maxlength="4" oninput="changeFocus2()">
+                    </div>
+                    <div class="phone__input">
+                        <input type="tel" id="num3" maxlength="4" oninput="changeFocus3()">
+                    </div>
+                </div>
+                <div class="auth">
+                    <div class="auth__token">
+                        <span id="auth">000000</span>
+                        <button id="send" class="auth__token__send" onclick="tokenSend()" disabled>인증번호 전송</button>
+                    </div>
+                    <div class="auth__timer">
+                        <span id="timer">3:00</span>
+                        <button id="done" class="auth__timer__complete" onclick="authComplete()" disabled>인증완료</button>
+                    </div>
+                </div>
+                <div class="region">
+                    <select name="region" id="regionSelect">
+                        <option value="" selected disabled><span>지역을 선택하세요.</span></option>
+                        <option value="서울">서울</option>
+                        <option value="인천">인천</option>
+                        <option value="경기">경기</option>
+                    </select>
+                </div>
+                <div class="gender" id="gender">
+                    <input type="radio" name="gender" value="여성" onchange="checkbox()"><label>여성</label>
+                    <input type="radio" name="gender" value="남성" onchange="checkbox()"><label>남성</label>
+                </div>
+                <div class="divider"></div>
+                <div class="submit">
+                    <button id="submit" type="submit" onclick="submit()" disabled>가입하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./final.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+/* 태그 전체 지정해서 변경 */
+input {
+  background-color: red;
+}
+/* class 지정하여 변경 */
+.pw {
+  background-color: blue;
+}
+/* id 지정해서 변경 */
+#mail {
+  background-color: yellow;
+  border: 2px solid red;
+}
+
+/* BOX MODEL
+보더 : 박스의 기준이 되는 테두리
+마진 : 박스의 바깥 여백
+패딩 : 박스의 보더 안쪽 여백
+콘텐츠 : 박스의 내용 */
+
+/* 사이즈 계산이 중요하다.
+1. border-box : 크기 중심이 바깥 테두리 (안쪽으로 두꺼워짐)
+border 사이즈가 고정되어있으므로, 콘텐츠가 줄어든다
+2. content-box : 기본값, 콘텐츠 사이즈가 고정되고 보더 사이즈가 커진다. */

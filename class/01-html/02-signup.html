@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--이곳의 언어를 바탕으로 번역제안과 같은 것이 활성화됨 -->
+
+<head>
+    <title>회원가입</title>
+    <!-- html내부에 스타일 태그를 이용해서 css를 조작하는 경우
+    <style>
+        /* 태그 전체 지정해서 변경 */
+        input {
+            background-color: red;
+        }
+        /* class 지정하여 변경 */
+        .pw {
+            background-color: blue;
+        }
+        /* id 지정해서 변경 */
+        #mail {
+            background-color: yellow;
+            border: 2px solid red;
+        }
+    </style> -->
+    <link href="./02-signup.css" rel="stylesheet">
+</head>
+<h2>회원가입</h2>
+<input id="mail" type="email" placeholder="이메일을 입력해 주세요."><br><br>
+<input type="text" placeholder="이름을 입력해 주세요."></input><br><br>
+<!-- 비밀번호 마스킹을 위해서는 타입을 패스워드로 지정 -->
+<input class="pw" type="password" placeholder="비밀번호를 입력해 주세요."></input><br><br>
+<input class="pw" type="password" placeholder="비밀번호를 다시 입력해 주세요."></input><br><br>
+<select>
+    <!-- 비활성화 기능!! , 선택이후에 재선택 불가 설정 -->
+    <option disabled="true" selected="true">지역을 선택하세요.</option>
+    <!-- 여기부터는 활성화된 상태 -->
+    <option>서울</option>
+    <option>경기</option>
+    <option>인천</option>
+</select>
+<br><br>
+<!-- 라디오 버튼은 같은 속성으로 묶어야 상호작용됨 -->
+<input type="radio" name="gender">여성</input>
+<input type="radio" name="gender">남성</input>
+<br><br>
+<input type="checkbox">이용약관 개인정보 수집 및 이용, 마케팅 어쩌고에 동의합니다.</input>
+<hr />
+<!-- 인풋태그보다는 버튼태그를 이용해서 디자인적 가능성을 열어두는 편 -->
+<button><b>가입하기</b></button>
+<!-- <input type="button" value="가입하기"> -->
+</body>
+
+</html>
